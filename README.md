@@ -1,2 +1,2 @@
 # Restro
-This repository contains the code for Restro a modern food ordering app. It lets users explore restaurants across cities, browse detailed menus, and place orders with ease. Built with React.js, Restro focuses on simplicity, convenience, and a smooth user experience
+_This repository contains the code for **Restro**, a thoughtfully crafted food ordering application. Developed with **React.js**, it replicates the core flow of modern food delivery platforms from city based restaurant discovery to menu exploration and seamless ordering._ 
