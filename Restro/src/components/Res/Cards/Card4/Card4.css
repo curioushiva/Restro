@@ -1,0 +1,75 @@
+/* Card 4 Component */
+.card4 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3vmax;
+  padding-bottom: 7vmax;
+}
+
+.card4 .heading {
+  width: 100%;
+  display: flex;
+}
+
+.card4 .heading h1 {
+  font-size: 1.5vmax;
+}
+
+.card4 .exploreres {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(10vmax, 1fr));
+  gap: 2.3vmax;
+}
+
+.card4 .exploreres .explore1 {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5vmax;
+  border: 0.5px solid #8d8f91;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.card4 .exploreres .explore1 h1 {
+  font-size: 1vmax;
+  text-align: center;
+  color: #c3c3c3;
+}
+
+.card4 .exploreres .explore2 {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5vmax;
+  border: 0.5px solid #8d8f91;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.card4 .exploreres .explore2 h1 {
+  font-size: 1vmax;
+  text-align: center;
+  color: #cd565a;
+}
+
+.card4 .exploreres .explore2 svg {
+  color: #cd565a;
+}
+
+@media (max-width: 720px) {
+  .card4 .exploreres {
+    grid-template-columns: repeat(2, minmax(10vmax, 1fr));
+  }
+}
+
+@media (max-width: 450px) {
+  .card4 .exploreres .explore1 h1 {
+    font-size: 1vmax;
+  }
+}
+

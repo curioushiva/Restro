@@ -1,0 +1,128 @@
+/* Header Component */
+.mainheader {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 1.4vmax 3vmax 2.4vmax 3vmax;
+  border-bottom: 0.1px solid #3d3d3d;
+}
+
+.header1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 3vw;
+}
+
+.header1 a {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.header1 a img {
+  width: 8.5vmax;
+}
+
+.header1 .location-1 {
+  display: flex;
+  align-items: flex-end;
+  cursor: pointer;
+}
+
+.header1 .location-1 h1 {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2vmax;
+  font-weight: 400;
+}
+
+.header1 .location-1 svg {
+  width: 1.6vmax;
+  height: 1.6vmax;
+}
+
+.header1 .location-2 {
+  display: none;
+  align-items: flex-end;
+  cursor: pointer;
+}
+
+.header1 .location-2 svg {
+  width: 1.4vmax;
+  height: 1.9vmax;
+  cursor: pointer;
+}
+
+.header2 {
+  display: flex;
+  align-items: flex-end;
+  gap: 3vw;
+  cursor: pointer;
+}
+
+.header2 a {
+  text-decoration: none;
+  color: white;
+  line-height: 1;
+  font-size: 1.2vmax;
+}
+
+.header2 a .carticon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.header2 a .carticon img {
+  height: 1.7vmax;
+  width: 1.7vmax;
+}
+
+.header2 a .carticon h1 {
+  font-size: 0.8vmax;
+  font-weight: 100;
+  margin-bottom: 0.5vmax;
+  margin-left: 0.6vmax;
+  position: absolute;
+}
+
+@media (max-width: 500px) {
+  .header1 .location-1 {
+    display: none;
+  }
+
+  .header1 .location-2 {
+    display: flex;
+  }
+}
+
+@media (max-width: 360px) {
+  .header1 a img {
+    width: 7.5vmax;
+  }
+
+  .header1 {
+    gap: 3vw;
+  }
+
+  .header1 .location-2 svg {
+    width: 1.2vmax;
+    height: 1.5vmax;
+  }
+
+  .header2 a {
+    font-size: 1vmax;
+  }
+
+  .header2 a .carticon img {
+    height: 1.4vmax;
+    width: 1.4vmax;
+  }
+
+  .header2 a .carticon h1 {
+    font-size: 0.7vmax;
+  }
+}

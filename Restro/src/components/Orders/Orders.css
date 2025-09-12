@@ -1,0 +1,293 @@
+/* Orders */
+.orders {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 4vmax 10vw 12vmax 10vw;
+  gap: 2vmax;
+}
+
+.order .order-1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.order-1 .heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.order-1 .heading h1 {
+  font-size: 2vmax;
+}
+
+.orders .order-2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5vmax;
+}
+
+.orderDetails {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  border: 1px solid #3d3d3d;
+  position: relative;
+}
+
+.OD-L,
+.OD-R {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.OD-L {
+  border-right: none;
+  border-bottom: 1px solid #3d3d3d;
+}
+
+.ODL-heading h1,
+.ODR-heading h1 {
+  font-size: 1.2vmax;
+}
+
+.ODL-heading,
+.ODR-heading {
+  width: 100%;
+  padding: 1vmax 1.6vmax;
+  border-bottom: 1px solid #3d3d3d;
+}
+
+.OD-L .itemsOdered {
+  width: 100%;
+  padding: 2vmax 1.6vmax 2vmax 1.6vmax;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.OD-L .itemsOdered .inneritemsOdered {
+  width: 100%;
+  max-height: 15vmax;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9vmax;
+}
+
+.OD-L .itemsOdered .inneritemsOdered::-webkit-scrollbar {
+  display: none;
+}
+
+.inneritemsOdered .iteminfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.iteminfo .aboutitem {
+  display: flex;
+  flex-direction: row;
+  gap: 0.8vmax;
+  align-items: center;
+}
+
+.iteminfo .aboutitem img {
+  width: 0.8vmax;
+}
+
+.iteminfo .aboutitem h1,
+.iteminfo .aboutitemprice h1 {
+  font-size: 1vmax;
+  font-weight: 100;
+}
+
+.itemsbill {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.ordernum {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #3d3d3d;
+}
+
+.ordernum span {
+  width: 50%;
+  border-right: 1px solid #3d3d3d;
+}
+
+.ordernum span h1 {
+  padding: 0.8vmax 1.6vmax;
+  font-size: 1vmax;
+  font-weight: 100;
+}
+
+.ordernum h2 {
+  padding: 0.8vmax 1.6vmax;
+  font-size: 1vmax;
+  font-weight: 100;
+}
+
+.orderid,
+.ordertotal,
+.deltime,
+.orderstatus {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8vmax 1.6vmax;
+  border-bottom: 1px solid #3d3d3d;
+}
+
+.orderid h1,
+.ordertotal h1,
+.deltime h1,
+.orderstatus h1 {
+  font-size: 1vmax;
+  font-weight: 100;
+}
+
+.itemsbill .downloadBill {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.3vmax 1.6vmax;
+}
+
+.downloadBill button {
+  padding: 0.4vmax 1.2vmax;
+  font-size: 1vmax;
+  font-weight: 400;
+  border: none;
+  background-color: #cd565a;
+  border-radius: 40px;
+  cursor: pointer;
+  color: white;
+}
+
+.orderstatus svg {
+  margin-left: 2vmax;
+  height: 1.2vmax;
+  width: 1.2vmax;
+}
+
+@media (min-width: 768px) {
+  .orderDetails {
+    flex-wrap: nowrap;
+  }
+
+  .OD-L {
+    width: 55%;
+    border-right: 1px solid #3d3d3d;
+    border-bottom: none;
+  }
+
+  .OD-R {
+    width: 45%;
+  }
+
+  .OD-L .itemsOdered .inneritemsOdered {
+    max-height: 12vmax;
+  }
+}
+
+@media (max-width: 450px) {
+  .ODL-heading h1,
+  .ODR-heading h1 {
+    font-size: 1vmax;
+  }
+  .iteminfo .aboutitem h1,
+  .iteminfo .aboutitemprice h1 {
+    font-size: 0.9vmax;
+  }
+
+  .ordernum span h1 {
+    font-size: 0.9vmax;
+  }
+
+  .ordernum h2 {
+    font-size: 0.9vmax;
+  }
+
+  .orderid h1,
+  .ordertotal h1,
+  .deltime h1,
+  .orderstatus h1 {
+    font-size: 0.9vmax;
+    font-weight: 100;
+  }
+}
+
+.O-orderCont {
+  height: 87vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3vmax 10vw 8vw 10vw;
+}
+
+.O-orderWrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2vmax;
+  border-radius: 10px;
+}
+
+.O-orderWrapper h1 {
+  font-size: 2.3vmax;
+}
+
+.O-orderWrapper h2 {
+  font-size: 1.8vmax;
+  font-weight: 200;
+  text-align: center;
+}
+
+.O-orderWrapper h3 {
+  font-size: 1.3vmax;
+  font-weight: 200;
+  text-align: center;
+}
+
+.O-orderWrapper h4 {
+  font-size: 1.2vmax;
+  font-weight: 200;
+  text-align: center;
+}
+
+.O-orderWrapper a {
+  text-decoration: none;
+  color: white;
+}
+
+.O-orderWrapper button {
+  padding: 0.8vmax 1.5vmax;
+  font-size: 1vmax;
+  font-weight: 900;
+  border: none;
+  background-color: #cd565a;
+  border-radius: 40px;
+  color: white;
+  cursor: pointer;
+}

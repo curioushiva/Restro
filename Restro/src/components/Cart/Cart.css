@@ -1,0 +1,517 @@
+/* Cart Component */
+.cartCont {
+  height: 87vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3vmax 10vw 8.5vw 10vw;
+}
+
+.cartWrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  border: 1px solid #3d3d3d;
+  border-radius: 10px;
+}
+
+.cart-L {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-right: 1px solid #3d3d3d;
+}
+
+.cart-L .CLheading {
+  width: 100%;
+  padding: 2vw;
+  border-bottom: 1px solid #3d3d3d;
+}
+
+.cart-L .CLheading h1 {
+  font-size: 1.2vw;
+}
+
+.cart-L .CLitems {
+  width: 100%;
+  padding: 2vw 3vw 4vmax 3vw;
+  max-height: 100%;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.cart-L .CLitems::-webkit-scrollbar {
+  display: none;
+}
+
+.cart-R {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-R .CRheading {
+  width: 100%;
+  padding: 2vw;
+  border-bottom: 1px solid #3d3d3d;
+}
+
+.cart-R .CRheading h1 {
+  font-size: 1.2vw;
+}
+
+.cart-R .CRitemsP {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 2vw;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.cart-R .CRitemsP::-webkit-scrollbar {
+  display: none;
+}
+
+.CRitemsP .cartButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+}
+
+.cartButtons button:nth-child(1) {
+  padding: 0.6vw 1.4vw;
+  color: white;
+  font-weight: 400;
+  font-size: 0.8vmax;
+  border: none;
+  background-color: #cd565a;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.cartButtons button:nth-child(2) {
+  padding: 0.6vw 1.4vw;
+  font-size: 0.8vmax;
+  font-weight: 400;
+  border: none;
+  background-color: #cd565a;
+  border-radius: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+.cartButtons button:nth-child(3) {
+  padding: 0.6vw 1.4vw;
+  font-size: 0.8vmax;
+  font-weight: 400;
+  border: none;
+  background-color: #cd565a;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.cartButtons button:nth-child(3) a {
+  color: white;
+  text-decoration: none;
+}
+
+.CRitemsP .cartAccount {
+  margin-top: 2vmax;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vw;
+  padding: 1.2vw;
+  border: 1px solid #3d3d3d;
+  border-radius: 10px;
+}
+
+.isACCCssAccount {
+  border: 1px dotted #cd565ad3 !important;
+}
+
+/* Desktop */
+.cartAccount .cartAcc-1 {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5vw;
+}
+
+.cartAccount .cartAcc-1 svg {
+  width: 1.1vmax;
+  height: 1vmax;
+}
+
+.cartAccount .cartAcc-1 h1 {
+  line-height: 1;
+  font-size: 1vmax;
+  font-weight: 100;
+}
+
+.cartAccount .cartAcc-2 {
+  display: flex;
+  gap: 0.5vw;
+}
+
+.cartAccount .cartAcc-2 svg {
+  width: 10%;
+  align-self: flex-start;
+  justify-self: flex-start;
+  height: 1vmax;
+  width: 1vmax;
+}
+
+.cartAccount .cartAcc-2 h1 {
+  width: 90%;
+  align-self: flex-start;
+  justify-self: flex-start;
+  font-size: 0.85vmax;
+  font-weight: 100;
+}
+
+/* Mobile & Tabs */
+.cartAccount .cartAcc-3 {
+  display: none;
+  gap: 0.5vw;
+}
+
+.cartAccount .cartAcc-3 svg {
+  align-self: flex-start;
+  justify-self: flex-start;
+  height: 1vmax;
+  width: 1vmax;
+}
+
+.cartAccount .cartAcc-3 h1 {
+  align-self: flex-start;
+  justify-self: flex-start;
+  font-size: 0.8vmax;
+  font-weight: 100;
+}
+
+.cartAccount a {
+  width: 100%;
+}
+
+.cartAccount button {
+  width: 100%;
+  padding: 0.6vw 1.4vw;
+  color: white;
+  font-weight: 400;
+  font-size: 0.8vmax;
+  border: 0.5px solid white;
+  background-color: transparent;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.CRitemsP .COD {
+  margin-top: 2vmax;
+  display: none;
+  flex-direction: column;
+  gap: 1.5vw;
+  padding: 1.2vw;
+  border: 1px solid #3d3d3d;
+  border-radius: 10px;
+}
+
+.COD h1 {
+  font-size: 1.1vmax;
+}
+
+.COD .COD-1 {
+  display: flex;
+  gap: 0.5vw;
+}
+
+.COD .COD-1 input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 1vmax;
+  height: 1vmax;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.COD .COD-1 input[type="checkbox"]:checked {
+  background-color: #cd565a;
+  border-color: #cd565a;
+}
+
+.COD .COD-1 input[type="checkbox"]:checked::after {
+  content: "✔";
+  color: #fff;
+  position: absolute;
+  font-size: 0.8vmax;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -55%);
+}
+
+.COD .COD-1 h1 {
+  align-self: flex-start;
+  justify-self: flex-start;
+  font-size: 0.85vmax;
+  font-weight: 100;
+  line-height: 1;
+}
+
+.CRitemsP .cartTotal {
+  width: 100%;
+  padding-top: 2vw;
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.cartTotal .itemsTotal {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-top: 1vw;
+  padding: 1vw;
+}
+
+.itemsTotal h1 {
+  font-size: 1vmax;
+  font-weight: 100;
+}
+
+.cartTotal .delFee {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1vw;
+  padding-top: 0vw;
+}
+
+.delFee h1 {
+  font-size: 1vmax;
+  font-weight: 100;
+}
+
+.cartTotal .totalPay {
+  width: 100%;
+  padding: 1vw;
+}
+
+.cartTotal .totalPay .totalPay-I {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1vw;
+  border-top: 1px solid white;
+}
+
+.cartTotal .totalPay .totalPay-I h1 {
+  font-size: 1.2vmax;
+  font-weight: 800;
+}
+
+.cartTotal .orderPlace {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1vw 1vw 1vw;
+  padding-top: 1vmax;
+}
+
+.orderPlace button {
+  padding: 0.6vw 1.4vw;
+  color: white;
+  font-weight: 400;
+  font-size: 0.8vmax;
+  border: 0.5px solid white;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@media (max-width: 1140px) {
+  .CRitemsP .COD {
+    margin-top: 2vmax;
+    display: flex;
+  }
+}
+
+@media (max-width: 580px) {
+  .cart-L .CLheading h1 {
+    font-size: 1.4vw;
+  }
+
+  .cart-R .CRheading h1 {
+    font-size: 1.4vw;
+  }
+
+  .CRitemsP .cartButtons {
+    width: 100%;
+    margin-top: 2vmax;
+    padding: 0 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2vmax;
+  }
+
+  .CRitemsP .cartAccount {
+    margin-top: 5vw;
+    padding: 2vw;
+  }
+
+  /* Desktop */
+  .cartAccount .cartAcc-2 {
+    display: none;
+  }
+
+  /* Mobile & Tabs */
+  .cartAccount .cartAcc-3 {
+    display: flex;
+    gap: 0.5vw;
+  }
+
+  .cartAccount .cartAcc-3 svg {
+    align-self: flex-start;
+    justify-self: flex-start;
+    height: 1vmax;
+    width: 1vmax;
+  }
+
+  .cartAccount .cartAcc-3 h1 {
+    align-self: flex-start;
+    justify-self: flex-start;
+    font-size: 0.8vmax;
+    font-weight: 100;
+  }
+
+  .CRitemsP .COD {
+    margin-top: 2.5vmax;
+    padding: 2.2vw 1.8vw;
+  }
+
+  .COD h1 {
+    font-size: 1vmax;
+  }
+
+  .COD .COD-1 {
+    display: flex;
+    gap: 1vw;
+  }
+
+  .COD .COD-1 input[type="checkbox"] {
+    width: 0.7vmax;
+    height: 0.7vmax;
+    border: 0.8px solid #ffffff;
+  }
+
+  .COD .COD-1 input[type="checkbox"]:checked::after {
+    font-size: 0.5vmax;
+  }
+
+  .COD .COD-1 h1 {
+    font-size: 0.75vmax;
+  }
+
+  .CRitemsP .cartTotal {
+    margin-top: auto;
+  }
+
+  .cartTotal .orderPlace {
+    padding-top: 1.5vmax;
+  }
+
+  .orderPlace button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .itemsTotal h1 {
+    font-size: 0.9vmax;
+  }
+
+  .delFee h1 {
+    font-size: 0.9vmax;
+  }
+
+  .cartTotal .totalPay {
+    width: 100%;
+    padding: 1vw;
+  }
+
+  .cartTotal .totalPay .totalPay-I h1 {
+    font-size: 1vmax;
+  }
+}
+
+/* Empty & Order Confirmed Cart */
+.E-cartCont {
+  height: 87vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3vmax 10vw 8vw 10vw;
+}
+
+.E-cartWrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2vmax;
+  border-radius: 10px;
+}
+
+.E-cartWrapper h1 {
+  font-size: 2.3vmax;
+}
+
+.E-cartWrapper h2 {
+  font-size: 1.8vmax;
+  font-weight: 200;
+  text-align: center;
+}
+
+.E-cartWrapper h3 {
+  font-size: 1.3vmax;
+  font-weight: 200;
+  text-align: center;
+}
+
+.E-cartWrapper h4 {
+  font-size: 1.2vmax;
+  font-weight: 200;
+  text-align: center;
+}
+
+.E-cartWrapper a {
+  text-decoration: none;
+  color: white;
+}
+
+.E-cartWrapper button {
+  padding: 0.8vmax 1.5vmax;
+  font-size: 1vmax;
+  font-weight: 900;
+  border: none;
+  background-color: #cd565a;
+  border-radius: 40px;
+  color: white;
+  cursor: pointer;
+}

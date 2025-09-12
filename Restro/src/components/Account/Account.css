@@ -1,0 +1,729 @@
+/* Account Compenent */
+.detailsCont {
+  padding: 4vmax 10vw 12vmax 10vw;
+}
+
+/* User Container */
+.userCont {
+  display: flex;
+  flex-direction: column;
+  gap: 3vmax;
+}
+
+/* header */
+.userCont .header {
+  width: 100%;
+  display: flex;
+}
+
+.userCont .header h1 {
+  font-size: 2vmax;
+}
+
+/* Account */
+.userCont .account {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vmax;
+}
+
+.account .title {
+  display: flex;
+  flex-direction: column;
+}
+
+.account .title h1 {
+  font-size: 1.5vmax;
+  font-weight: 100;
+}
+
+.account .intro {
+  display: flex;
+}
+
+.account .intro .greet {
+  width: 60vmin;
+  border: 1.5px dotted #3d3d3d;
+  display: flex;
+  padding: 10px;
+}
+
+.account .intro .greet h1 {
+  font-size: 1.2vmax;
+  font-weight: 100;
+}
+
+.account .actions {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 1.5vmax;
+}
+
+.account .actions button {
+  padding: 0.5vmax 1.5vmax;
+  color: white;
+  border: 0.5px solid white;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.account .actions button::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: all ease 0.4s;
+}
+
+.account .actions button:hover::after {
+  bottom: 0;
+  border-radius: 0;
+  background-color: #cd565a;
+}
+
+.account .actions button h3 {
+  color: white;
+  font-size: 1vmax;
+  font-weight: 400;
+  position: relative;
+  z-index: 1;
+}
+
+/* Signup */
+.userCont .signup {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2vmax;
+}
+
+.signup .title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.signup .title h1 {
+  font-size: 1.5vmax;
+  font-weight: 100;
+}
+
+.signup .signupinput {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vmax;
+}
+
+.signupinput .username {
+  width: 60vmin;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+}
+
+.signupinput .username input {
+  padding: 1.5vmin 20px;
+  text-align: left;
+  border: 0.5px solid white;
+  color: white;
+  font-size: 1vmax;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.signupinput .username input:focus {
+  outline: none;
+}
+
+.signupinput .username input::placeholder {
+  font-size: 1vmax;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.signupinput .email {
+  width: 60vmin;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+}
+
+.signupinput .email input {
+  padding: 1.5vmin 20px;
+  text-align: left;
+  border: 0.5px solid white;
+  color: white;
+  font-size: 1vmax;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.signupinput .email input:focus {
+  outline: none;
+}
+
+.signupinput .email input::placeholder {
+  font-size: 1vmax;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.signupinput .password {
+  width: 60vmin;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+}
+
+.signupinput .password input {
+  padding: 1.5vmin 20px;
+  text-align: left;
+  border: 0.5px solid white;
+  color: white;
+  font-size: 1vmax;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.signupinput.password input:focus {
+  outline: none;
+}
+
+.signupinput .password input::placeholder {
+  font-size: 1vmax;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.signup .actions {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+.signup .actions button {
+  padding: 0.5vmax 1.5vmax;
+  font-size: 1.1vmax;
+  font-weight: 400;
+  border: none;
+  background-color: #cd565a;
+  border-radius: 40px;
+  cursor: pointer;
+  color: white;
+}
+
+.signup .message {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3vmax;
+}
+
+.signup .message h1 {
+  font-size: 1vmax;
+  font-weight: 200;
+  color: #cd565a;
+}
+
+.signup .message h2 {
+  font-size: 1vmax;
+  font-weight: 200;
+  border-bottom: 0.5px solid white;
+  align-self: flex-start;
+  display: inline-block;
+}
+
+/* Login */
+.userCont .login {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2vmax;
+}
+
+.login .title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.login .title h1 {
+  font-size: 1.5vmax;
+  font-weight: 100;
+}
+
+.login .logininput {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vmax;
+}
+
+.logininput .email {
+  width: 60vmin;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+}
+
+.logininput .email input {
+  padding: 1.5vmin 20px;
+  text-align: left;
+  border: 0.5px solid white;
+  color: white;
+  font-size: 1vmax;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.logininput .email input:focus {
+  outline: none;
+}
+
+.logininput .email input::placeholder {
+  font-size: 1vmax;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.logininput .password {
+  width: 60vmin;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+}
+
+.logininput .password input {
+  padding: 1.5vmin 20px;
+  text-align: left;
+  border: 0.5px solid white;
+  color: white;
+  font-size: 1vmax;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.logininput .password input:focus {
+  outline: none;
+}
+
+.logininput .password input::placeholder {
+  font-size: 1vmax;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.login .actions {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+.login .actions button {
+  padding: 0.5vmax 1.5vmax;
+  font-size: 1.1vmax;
+  font-weight: 400;
+  border: none;
+  background-color: #cd565a;
+  border-radius: 40px;
+  cursor: pointer;
+  color: white;
+}
+
+.login .message {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3vmax;
+}
+
+.login .message h1 {
+  font-size: 1vmax;
+  font-weight: 200;
+  color: #cd565a;
+}
+
+.login .message h2 {
+  font-size: 1vmax;
+  font-weight: 200;
+  border-bottom: 0.5px solid white;
+  align-self: flex-start;
+  display: inline-block;
+}
+
+/* Update */
+.userCont .update {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2vmax;
+}
+
+.update .title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.update .title h1 {
+  font-size: 1.5vmax;
+  font-weight: 100;
+}
+
+.update .updateinput {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vmax;
+}
+
+.updateinput .username {
+  width: 60vmin;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+}
+
+.updateinput .username input {
+  padding: 1.5vmin 20px;
+  text-align: left;
+  border: 0.5px solid white;
+  color: white;
+  font-size: 1vmax;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.updateinput .username input:focus {
+  outline: none;
+}
+
+.updateinput .username input::placeholder {
+  font-size: 1vmax;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.updateinput .email {
+  width: 60vmin;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+}
+
+.updateinput .email input {
+  padding: 1.5vmin 20px;
+  text-align: left;
+  border: 0.5px solid white;
+  color: white;
+  font-size: 1vmax;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.updateinput .email input:focus {
+  outline: none;
+}
+
+.updateinput .email input::placeholder {
+  font-size: 1vmax;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.updateinput .password {
+  width: 60vmin;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+}
+
+.updateinput .password input {
+  padding: 1.5vmin 20px;
+  text-align: left;
+  border: 0.5px solid white;
+  color: white;
+  font-size: 1vmax;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.updateinput .password input:focus {
+  outline: none;
+}
+
+.updateinput .password input::placeholder {
+  font-size: 1vmax;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.update .actions {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+.update .actions button {
+  padding: 0.5vmax 1.5vmax;
+  font-size: 1.1vmax;
+  font-weight: 400;
+  border: none;
+  background-color: #cd565a;
+  border-radius: 40px;
+  cursor: pointer;
+  color: white;
+}
+
+.update .message {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3vmax;
+}
+
+.update .message h1 {
+  font-size: 1vmax;
+  font-weight: 200;
+  color: #cd565a;
+}
+
+/* Address Container */
+.addressCont {
+  display: flex;
+  flex-direction: column;
+  gap: 3vmax;
+}
+
+.addressCont .header {
+  width: 100%;
+  display: flex;
+}
+
+.addressCont .header h1 {
+  font-size: 2vmax;
+}
+
+.addressCont .addressSection {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.addressSection .addressForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2vmax;
+}
+
+.addressForm .formTitle {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.addressForm .formTitle h1 {
+  font-size: 1.5vmax;
+  font-weight: 100;
+}
+
+.addressForm .formBody {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vmax;
+}
+
+.addressForm .formBody .addressLine1 {
+  width: 60vmin;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+}
+
+.formBody .addressLine1 label {
+  font-size: 0.8vmax;
+}
+
+.formBody .addressLine1 input {
+  padding: 1.5vmin 20px;
+  text-align: left;
+  border: 0.5px solid white;
+  color: white;
+  font-size: 1vmax;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.formBody .addressLine1 input:focus {
+  outline: none;
+}
+
+.formBody .addressLine1 input::placeholder {
+  font-size: 1vmax;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.addressForm .formBody .addressLine2 {
+  width: 60vmin;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+}
+
+.formBody .addressLine2 label {
+  font-size: 0.8vmax;
+}
+
+.formBody .addressLine2 input {
+  padding: 1.5vmin 20px;
+  text-align: left;
+  font-size: 1vmax;
+  border: 0.5px solid white;
+  color: rgba(255, 255, 255, 0.76);
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.formBody .addressLine2 input::placeholder {
+  font-size: 1vmax;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.addressForm .actions {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 1vmax;
+}
+
+.addressForm .actions button {
+  padding: 0.5vmax 1.5vmax;
+  font-size: 1.1vmax;
+  font-weight: 400;
+  border: none;
+  background-color: #cd565a;
+  border-radius: 40px;
+  cursor: pointer;
+  color: white;
+}
+
+.addressForm .message {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3vmax;
+}
+
+.addressForm .message h1 {
+  font-size: 1vmax;
+  font-weight: 200;
+  border-bottom: 0.5px solid white;
+  align-self: flex-start;
+  display: inline-block;
+}
+
+/* Address Saved */
+.addressCont {
+  display: flex;
+  flex-direction: column;
+  gap: 3vmax;
+}
+
+.addressCont .header {
+  width: 100%;
+  display: flex;
+}
+
+.addressCont .header h1 {
+  font-size: 2vmax;
+}
+
+.addressCont .addressSection {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.addressSection .addressCard {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vmax;
+}
+
+.addressCard .title {
+  display: flex;
+  flex-direction: column;
+}
+
+.addressCard .title h1 {
+  font-size: 1.5vmax;
+  font-weight: 100;
+}
+
+.addressCard .addressTop {
+  display: flex;
+}
+
+.addressCard .addressTop .addressContent {
+  width: 60vmin;
+  border: 1.5px dotted #3d3d3d;
+  display: flex;
+  padding: 10px;
+}
+
+.addressCard .addressTop .addressContent h1 {
+  font-size: 1.2vmax;
+  font-weight: 100;
+}
+
+.addressCard .actions {
+  width: 100%;
+  display: flex;
+  gap: 1.5vmax;
+}
+
+.addressCard .actions button {
+  padding: 0.5vmax 1.5vmax;
+  color: white;
+  border: 0.5px solid white;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.addressCard .actions button::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: all ease 0.4s;
+}
+
+.addressCard .actions button:hover::after {
+  bottom: 0;
+  border-radius: 0;
+  background-color: #cd565a;
+}
+
+.addressCard .actions button h3 {
+  color: white;
+  font-size: 1vmax;
+  font-weight: 400;
+  position: relative;
+  z-index: 1;
+}

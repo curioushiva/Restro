@@ -1,0 +1,73 @@
+/* Card 1 Component Shimmer UI */
+.Su-card1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3vmax;
+  padding-bottom: 3vmax;
+}
+
+.Su-card1 .Su-heading {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Su-card1 .Su-heading h1 {
+  height: 1.5vmax;
+  width: 20vmax;
+  background: linear-gradient(
+    -45deg,
+    #e6e6e6bc 40%,
+    #cfcece 50%,
+    #e6e6e6bc 60%
+  );
+  background-size: 300%;
+  background-position-x: 100%;
+  animation: Card1Shimmer 1s infinite linear;
+}
+
+.Su-card1 .Su-slider {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.Su-card1 .Su-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.Su-card1 .Su-slider {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.Su-card1 .Su-slider .Su-items {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 3vmax;
+}
+
+.Su-card1 .Su-slider .Su-items .Su-itemimg {
+  height: 10vmax;
+  width: 10vmax;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: linear-gradient(
+    -45deg,
+    #e6e6e6bc 40%,
+    #cfcece 50%,
+    #e6e6e6bc 60%
+  );
+  background-size: 300%;
+  background-position-x: 100%;
+  animation: Card1Shimmer 1s infinite linear;
+}
+
+@keyframes Card1Shimmer {
+  to {
+    background-position-x: 0%;
+  }
+}

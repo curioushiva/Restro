@@ -1,0 +1,145 @@
+/* Card 2 Component */
+.card2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3vmax;
+  padding-bottom: 3vmax;
+  border-bottom: 0.5px solid #8d8f91;
+}
+
+.card2 .heading {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card2 .heading h1 {
+  font-size: 1.5vmax;
+}
+
+.card2 .heading .arrowSliders {
+  display: flex;
+  gap: 1.5vmax;
+}
+
+.card2 .heading .arrowSliders svg {
+  width: 1.7vmax;
+  height: 1.7vmax;
+  color: #c3c3c3;
+}
+
+.card2 .slider {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.card2 .slider::-webkit-scrollbar {
+  display: none;
+}
+
+.card2 .slider {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.card2 .slider .items {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 3vmax;
+}
+
+.card2 .slider .items a {
+  text-decoration: none;
+}
+
+.items .itemCont {
+  height: 270px;
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  position: relative;
+  transition: all 0.5s ease;
+}
+
+.items .itemCont:hover {
+  cursor: pointer;
+  transform: scale(0.97);
+}
+
+.items .itemCont .itemimg {
+  height: 60%;
+  width: 100%;
+  position: relative;
+}
+
+.items .itemCont .itemimg h1 {
+  font-size: 1.5vmax;
+  color: rgb(218, 218, 218);
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  z-index: 2;
+}
+
+.items .itemCont .itemimg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.35), transparent);
+  z-index: 1;
+  border-radius: 15px;
+}
+
+.items .itemCont .itemimg img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.items .itemCont .iteminfo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 15px;
+  color: #c3c3c3;
+}
+
+.items .itemCont .iteminfo h2 {
+  font-size: 1.3vmax;
+}
+
+.items .itemCont .iteminfo .rating {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.items .itemCont .iteminfo .rating svg {
+  height: 15px;
+  width: 15px;
+  padding: 2px;
+  background-color: #cd565a;
+  border-radius: 50%;
+}
+
+.items .itemCont .iteminfo .rating h3 {
+  line-height: 1;
+  font-size: 1.1vmax;
+  font-weight: 100;
+}
+
+.items .itemCont .iteminfo h4 {
+  font-size: 1vmax;
+  font-weight: 100;
+  color: #c3c3c3c5;
+}

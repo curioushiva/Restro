@@ -1,0 +1,295 @@
+/* About Component Shimmer UI */
+/* About Developer */
+.su-aboutDW {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3vmax;
+}
+
+.su-aboutDW-up {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background: linear-gradient(
+    -45deg,
+    #e6e6e6bc 40%,
+    #cfcece 50%,
+    #e6e6e6bc 60%
+  );
+  background-size: 300%;
+  background-position-x: 100%;
+  animation: aboutDevShimmer 1s infinite linear;
+}
+
+.su-aDWU-1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.su-aDWU-1 .su-overview {
+  width: 100%;
+  padding: 2vw;
+  border-bottom: 1px solid #3d3d3d;
+}
+
+.su-aDWU-1 .su-overview h1 {
+  height: 1.2vmax;
+  width: 10vmax;
+  background-color: #e6e6e6;
+}
+
+.su-aDWU-2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2vw;
+  padding: 2vw;
+}
+
+.su-aDWU-2 .userinfo {
+  width: 100%;
+}
+
+.su-aDWU-2 .su-userinfo a {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2vw;
+}
+
+.su-aDWU-2 .su-userinfo img {
+  height: 7vw;
+  width: 7vw;
+  border-radius: 50%;
+  background-color: #e6e6e6;
+}
+
+.su-aDWU-2 .su-userinfo .su-username {
+  display: flex;
+  flex-direction: column;
+}
+
+.su-aDWU-2 .su-userinfo .su-username h2 {
+  height: 2.4vmax;
+  width: 10vmax;
+  background-color: #e6e6e6;
+}
+
+.aDWU-2 .userbio {
+  display: flex;
+}
+
+.su-aDWU-2 .su-userbio h2 {
+  height: 3vmax;
+  width: 19vmax;
+  background-color: #e6e6e6;
+}
+
+.su-aDWU-2 .su-usersocials {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 7px;
+}
+
+.su-aDWU-2 .su-usersocials a {
+  height: 5vmax;
+  width: 19vmax;
+  background-color: #e6e6e6;
+}
+
+.su-aboutDW-dn {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #3d3d3d;
+  border-radius: 10px;
+  background: linear-gradient(
+    -45deg,
+    #e6e6e6bc 40%,
+    #cfcece 50%,
+    #e6e6e6bc 60%
+  );
+  background-size: 300%;
+  background-position-x: 100%;
+  animation: aboutDevShimmer 1s infinite linear;
+}
+
+.su-aDWD-1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.su-aDWD-1 .su-heading {
+  width: 100%;
+  padding: 2vw;
+  border-bottom: 1px solid #3d3d3d;
+}
+
+.su-aDWD-1 .su-heading h1 {
+  height: 1.2vmax;
+  width: 15vmax;
+  background-color: #e6e6e6;
+}
+
+.su-aDWD-2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2vw;
+  padding: 2vw 2vw 2vw 2vw;
+}
+
+.su-aDWD-2 .su-reponame {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.su-aDWD-2 .su-reponame h2 {
+  height: 2.4vmax;
+  width: 10vmax;
+  background-color: #e6e6e6;
+}
+
+.su-aDWD-2 .su-repoabout {
+  display: flex;
+}
+
+.su-aDWD-2 .su-repoabout p {
+  height: 5vmax;
+  width: 20vmax;
+  background-color: #e6e6e6;
+}
+
+.su-aDWD-2 .su-repoinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 7px;
+}
+
+.su-aDWD-2 .su-repoinfo .su-rpcard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.su-aDWD-2 .su-repoinfo .su-rpcard h3 {
+  height: 4vmax;
+  width: 19vmax;
+  background-color: #e6e6e6;
+}
+
+@media (max-width: 650px) {
+  .su-aboutDW {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5vw;
+  }
+
+  .su-aboutDW-up {
+    width: 100%;
+  }
+
+  .su-aDWU-1 .su-overview {
+    padding: 3vw;
+  }
+
+  .su-aDWU-2 {
+    gap: 3vw;
+    padding: 3vw;
+  }
+
+  .su-aDWU-1 .su-overview h1 {
+    height: 1.2vmax;
+    width: 10vmax;
+  }
+
+  .su-aDWU-2 .su-userinfo img {
+    width: 10vw;
+    height: 10vw;
+  }
+
+  .su-aDWU-2 .su-userinfo .su-username h2 {
+    height: 3.4vmax;
+    width: 15vmax;
+  }
+
+  .su-aDWU-2 .su-userbio h2 {
+    height: 3vmax;
+    width: 24vmax;
+  }
+
+  .su-aDWU-2 .su-usersocials {
+    gap: 5px;
+  }
+
+  .su-aDWU-2 .su-usersocials a {
+    height: 6vmax;
+    width: 24vmax;
+  }
+
+  .su-aboutDW-dn {
+    width: 100%;
+  }
+
+  .su-aDWD-1 .su-heading {
+    padding: 3vw;
+  }
+
+  .su-aDWD-2 {
+    gap: 3vw;
+    padding: 3vw;
+  }
+
+  .su-aDWD-2 .su-reponame h2 {
+    height: 3.4vmax;
+    width: 15vmax;
+  }
+
+  .su-aDWD-2 .su-repoabout {
+    width: 70%;
+  }
+
+  .su-aDWD-2 .su-repoabout p {
+    height: 7vmax;
+    width: 30vmax;
+  }
+
+  .su-aDWD-2 .su-repoinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .su-aDWD-2 .su-repoinfo .su-rpcard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .su-aDWD-2 .su-repoinfo .su-rpcard h3 {
+    height: 6vmax;
+    width: 24vmax;
+  }
+}
+
+@keyframes aboutDevShimmer {
+  to {
+    background-position-x: 0%;
+  }
+}

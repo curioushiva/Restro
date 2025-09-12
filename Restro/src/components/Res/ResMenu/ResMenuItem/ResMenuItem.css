@@ -1,0 +1,197 @@
+/* Res Menu Item Component */
+.CTG2-Items {
+  width: 100%;
+  display: flex;
+  gap: 2vw;
+  padding: 30px 10px 30px 10px;
+  border-bottom: 0.1px solid #8d8f91;
+}
+
+.CTG2I-L {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.CTG2I-L img {
+  height: 1.2vmax;
+  width: 1.2vmax;
+}
+
+.CTG2I-L h1 {
+  font-size: 1.4vmax;
+  color: rgba(255, 255, 255, 0.879);
+}
+
+.CTG2I-L h2 {
+  font-size: 1.2vmax;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.CTG2I-L h2 .CTG2I-L-offer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.CTG2I-L h2 .CTG2I-L-offer svg {
+  width: 0.7vmax;
+  color: #118a64;
+}
+
+.CTG2I-L h2 .CTG2I-L-offer span {
+  font-size: 0.8vmax;
+  color: #8d8f91;
+}
+
+.CTG2I-L p {
+  padding-top: 10px;
+  font-size: 1.1vmax;
+  font-weight: 100;
+  color: #8d8f91;
+  max-width: 100%;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.CTG2I-R {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.CTG2IR-Cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.CTG2IR-Cont img {
+  height: 12.5vmax;
+  width: 13.2vmax;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+}
+
+.CTG2IR-Cont-noImg {
+  height: 6.25vmax;
+  width: 13.2vmax;
+  background-color: transparent;
+  border-radius: 20px;
+}
+
+.CTG2IR-Cont .addCustom-1 {
+  position: relative;
+  top: -1vmax;
+  height: 2.7vmax;
+  width: 7vmax;
+  background-color: #cd565a;
+  border-radius: 15px;
+  cursor: pointer;
+  padding: 0.5vmax 1vmax;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.addCustom-1 h1 {
+  font-size: 1.2vmax;
+}
+
+.CTG2IR-Cont .addCustom-2 {
+  position: relative;
+  top: -1vmax;
+  height: 2.7vmax;
+  width: 7.5vmax;
+  background-color: #cd565a;
+  border-radius: 15px;
+  cursor: pointer;
+  padding: 0.5vmax 1vmax;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5vmax;
+}
+
+.addCustom-2 h1 {
+  font-size: 1.1vmax;
+}
+
+.addCustom-2 button {
+  width: 40%;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1.8vmax;
+  font-weight: 1000;
+  cursor: pointer;
+  outline: none;
+}
+
+@media (max-width: 1080px) {
+  .CTG2I-L {
+    width: 60%;
+  }
+
+  .CTG2I-R {
+    width: 40%;
+  }
+}
+
+@media (max-width: 600px) {
+  .CTG2I-L {
+    width: 55%;
+  }
+
+  .CTG2I-L p {
+    padding-top: 0px;
+    font-size: 1.1vmax;
+  }
+
+  .CTG2I-R {
+    width: 45%;
+  }
+
+  .CTG2IR-Cont img {
+    height: 8.5vmax;
+    width: 9.2vmax;
+  }
+
+  .CTG2IR-Cont-noImg {
+    height: 4.25vmax;
+    width: 9.2vmax;
+  }
+
+  .CTG2IR-Cont .addCustom-1 {
+    height: 2.4vmax;
+    width: 6.3vmax;
+  }
+
+  .addCustom-1 h1 {
+    font-size: 1vmax;
+  }
+
+  .CTG2IR-Cont .addCustom-2 {
+    top: -1.3vmax;
+    height: 2.3vmax;
+    width:6.8vmax;
+  }
+
+  .addCustom-2 h1 {
+    font-size: 1vmax;
+  }
+
+  .addCustom-2 button {
+    font-size: 1.6vmax;
+  }
+}

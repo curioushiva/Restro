@@ -1,0 +1,29 @@
+# Node dependencies
+/node_modules
+
+# Parcel build output
+/dist
+/.parcel-cache
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.development.local
+.env.production
+.env.production.local
+
+# IDE/editor specific files
+.vscode/
+.idea/
+*.swp

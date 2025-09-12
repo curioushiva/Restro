@@ -1,0 +1,82 @@
+/* Main Component */
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 7vmax;
+  padding: 5vmax 6vmax 7vmax 6vmax;
+}
+
+/* Rrestaurant Unavailable */
+.restaurantUnavail {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5vmax;
+}
+
+.restaurantUnavail .UnavailMsg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+}
+
+.restaurantUnavail .UnavailMsg h1 {
+  font-size: 2.5vmax;
+  color: #cd565a;
+}
+
+.restaurantUnavail .UnavailMsg h2 {
+  font-size: 1.5vmax;
+  font-weight: 600;
+}
+
+.restaurantUnavail .UnavailFix {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2vmax;
+}
+
+.restaurantUnavail .UnavailFix h2 {
+  text-align: center;
+  font-size: 1.2vmax;
+  font-weight: 100;
+}
+
+.restaurantUnavail .UnavailFix button {
+  padding: 0.5vmax 1.3vmax;
+  color: white;
+  font-weight: 400;
+  font-size: 1vmax;
+  border: none;
+  background-color: #cd565a;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+@media (max-width: 680px) {
+  .restaurantUnavail .UnavailFix button {
+    font-size: 0.9vmax;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

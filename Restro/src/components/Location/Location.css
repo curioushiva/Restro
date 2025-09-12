@@ -1,0 +1,182 @@
+/* Location Component */
+.locationCont {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 10;
+  display: flex;
+  overflow: hidden;
+}
+
+.locChild-1 {
+  width: 30vmax;
+  height: 100%;
+  padding: 4vmax 4vmax 4vmax 6vmax;
+  background-color: #0f0f0f;
+}
+
+.locChild-2 {
+  width: calc(100vw - 30vmax);
+  height: 100%;
+  background-color: #00000035;
+}
+
+.locWrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2vmax;
+}
+
+.lc-1 {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.lc-1 svg {
+  height: 2vmax;
+  width: 2vmax;
+  cursor: pointer;
+}
+
+.lc-2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.lc-2 input {
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  border: 0.5px solid white;
+  color: rgba(255, 255, 255, 0.76);
+  background-color: transparent;
+}
+
+.lc-2 input::placeholder {
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.lc-2 button {
+  width: 35%;
+  padding: 7px 0;
+  text-align: center;
+  border: 0.5px solid white;
+  color: rgba(255, 255, 255, 0.76);
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.lc-2 button::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: all ease 0.4s;
+}
+
+.lc-2 button:hover::after {
+  bottom: 0;
+  border-radius: 0;
+  background-color: #cd565a;
+}
+
+.lc-2 button h3 {
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 1vmax;
+  font-weight: 100;
+  position: relative;
+  z-index: 1;
+}
+
+.lc-3 {
+  margin-top: 2vw;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.lc-3 .mainLoc {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px dotted #3d3d3d;
+}
+
+.lc-3 .mainLocAfter {
+  border: 1px dotted #cd565a;
+}
+
+.mainLoc .loc-1 {
+  display: flex;
+  align-items: flex-start;
+}
+
+.mainLoc svg {
+  width: 1.1vmax;
+  height: 1.1vmax;
+  padding-top: 2px;
+}
+
+.mainLoc .loc-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.loc-2 h1 {
+  font-size: 1vmax;
+  line-height: 1;
+  font-weight: 100;
+}
+
+.loc-2 h1:hover {
+  color: #cd565a;
+}
+
+.loc-2 h2 {
+  font-size: 0.8vmax;
+  line-height: 1;
+  font-weight: 100;
+  color: #dadbdd;
+}
+
+.lc-3 .no-loc {
+  margin-top: 2vmax;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.no-loc h1 {
+  font-size: 1.3vmax;
+  line-height: 1;
+  font-weight: 100;
+}
+
+.no-loc h2 {
+  font-size: 1vmax;
+  line-height: 1;
+  font-weight: 100;
+}

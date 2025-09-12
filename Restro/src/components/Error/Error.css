@@ -1,0 +1,75 @@
+/* Error Component */
+.errorPage {
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  background-color: #0f0f0f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2vw;
+  overflow: hidden;
+}
+
+.error-1 img {
+  width: 20vw;
+}
+
+.error-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2vw;
+}
+
+.error-2 h1 {
+  font-size: 5vw;
+}
+
+.error-2 h2 {
+  font-size: 1.5vw;
+}
+
+.error-2 h3 {
+  font-size: 1vw;
+}
+
+.error-2 .homebtn {
+  padding: 1vw;
+  font-size: 1vw;
+  border: 0.5px solid white;
+  background-color: #cd565a;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 40px;
+}
+
+@media (max-width: 650px) {
+  .error-1 img {
+    width: 50vw;
+  }
+
+  .error-2 {
+    gap: 4vw;
+  }
+
+  .error-2 h1 {
+    font-size: 10vw;
+  }
+
+  .error-2 h2 {
+    font-size: 3vw;
+  }
+
+  .error-2 h3 {
+    font-size: 2vw;
+  }
+
+  .error-2 .homebtn {
+    padding: 2vw;
+    font-size: 2vw;
+  }
+}

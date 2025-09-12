@@ -1,0 +1,69 @@
+/* Offline Component */
+.offline {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5vmax;
+}
+
+.offline .offlinemsg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+}
+
+.offline .offlinemsg h1 {
+  font-size: 3vmax;
+  color: #cd565a;
+}
+
+.offline .offlinemsg h2 {
+  font-size: 2.2vmax;
+}
+
+.offline .offlinemsg h3 {
+  font-size: 1.5vmax;
+}
+
+.offline .offlinefix {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+}
+
+.offline .offlinefix h2 {
+  font-size: 1.9vmax;
+}
+
+.offline .offlinefix h3 {
+  font-size: 1.2vmax;
+}
+
+@media (max-width: 420px) {
+  .offline .offlinemsg h1 {
+    font-size: 2.8vmax;
+    color: #cd565a;
+  }
+
+  .offline .offlinemsg h2 {
+    font-size: 1.8vmax;
+  }
+
+  .offline .offlinemsg h3 {
+    font-size: 1.3vmax;
+  }
+
+  .offline .offlinefix h2 {
+    font-size: 1.6vmax;
+  }
+
+  .offline .offlinefix h3 {
+    font-size: 1.1vmax;
+  }
+}

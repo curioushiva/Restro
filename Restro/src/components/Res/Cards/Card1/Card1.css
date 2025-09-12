@@ -1,0 +1,71 @@
+/* Card 1 Component */
+.card1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3vmax;
+  padding-bottom: 3vmax;
+  border-bottom: 0.5px solid #8d8f91;
+}
+
+.card1 .heading {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card1 .heading h1 {
+  font-size: 1.5vmax;
+}
+
+.card1 .heading .arrowSliders {
+  display: flex;
+  gap: 1.5vmax;
+}
+
+.card1 .heading .arrowSliders svg {
+  width: 1.7vmax;
+  height: 1.7vmax;
+  color: #c3c3c3;
+}
+
+.card1 .slider {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.card1 .slider::-webkit-scrollbar {
+  display: none;
+}
+
+.card1 .slider {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.card1 .slider .items {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 3vmax;
+}
+
+.card1 .slider .items .itemimg {
+  height: 10vmax;
+  width: 10vmax;
+  flex-shrink: 0;
+}
+
+.card1 .slider .items .itemimg:hover {
+  cursor: pointer;
+  transform: scale(0.97);
+}
+
+.card1 .slider .items .itemimg img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}

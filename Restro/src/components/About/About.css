@@ -1,0 +1,453 @@
+/* About Compenent */
+/* About Us */
+.aboutus {
+  display: flex;
+  flex-direction: column;
+  gap: 5vmax;
+  padding: 3vw 10vw 12vmax 10vw;
+}
+
+.aboutRes {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+
+.aboutR-up {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1vmax;
+}
+
+.aboutR-up h1 {
+  font-size: 2vmax;
+}
+
+.aboutR-up p {
+  font-size: 1.2vmax;
+  font-weight: 100;
+}
+
+.aboutR-up button {
+  margin-top: 0.7vmax;
+  padding: 0.8vmax;
+  font-size: 0.8vmax;
+  border: 0.5px solid #3d3d3d;
+  background-color: #cd565a;
+  border-radius: 40px;
+}
+
+.aboutR-up button a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.aboutR-dn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutR-dn .reviews {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.reviews .reviewCont {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-bottom: 0.5px solid #3d3d3d;
+}
+
+.reviews .reviewCont h1 {
+  align-self: flex-start;
+  font-size: 1.2vmax;
+  font-weight: 100;
+}
+
+.reviews .reviewCont p {
+  align-self: flex-end;
+  font-size: 0.9vmax;
+  font-weight: 100;
+}
+
+/* About Developer */
+.aboutDev {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutD-H {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px 5px 5px;
+}
+
+.aboutD-H h1 {
+  font-size: 1vmax;
+  font-weight: 200;
+  border-bottom: 0.5px solid white;
+  align-self: flex-start;
+  display: inline-block;
+}
+
+.svgToggle {
+  transform: rotate(0deg);
+}
+
+.svgToggle2 {
+  transform: rotate(180deg);
+}
+
+.aboutDW {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3vmax;
+}
+
+.aboutDW-up {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #3d3d3d;
+  border-radius: 10px;
+}
+
+.aDWU-1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.aDWU-1 .overview {
+  width: 100%;
+  padding: 2vw;
+  border-bottom: 1px solid #3d3d3d;
+}
+
+.aDWU-1 .overview h1 {
+  font-size: 1.2vmax;
+}
+
+.aDWU-2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2vw;
+  padding: 2vw;
+}
+
+.aDWU-2 .userinfo {
+  width: 100%;
+}
+
+.aDWU-2 .userinfo a {
+  color: white;
+  text-decoration: none;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2vw;
+}
+
+.aDWU-2 .userinfo img {
+  width: 7vw;
+  border-radius: 50%;
+}
+
+.aDWU-2 .userinfo .username {
+  display: flex;
+  flex-direction: column;
+}
+
+.aDWU-2 .userinfo .username h2 {
+  font-size: 1.5vmax;
+  font-weight: 600;
+}
+
+.aDWU-2 .userinfo .username h3 {
+  font-size: 1vmax;
+  font-weight: 100;
+  color: #e6e6e6bc;
+}
+
+.aDWU-2 .userbio {
+  display: flex;
+}
+
+.aDWU-2 .userbio h2 {
+  font-size: 1vmax;
+  font-weight: 100;
+  white-space: pre-line;
+}
+
+.aDWU-2 .usersocials {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 7px;
+}
+
+.aDWU-2 .usersocials a {
+  color: white;
+  text-decoration: none;
+  font-size: 1vmax;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.aDWU-2 .usersocials a svg {
+  height: 1vmax;
+  width: 1vmax;
+}
+
+.aboutDW-dn {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #3d3d3d;
+  border-radius: 10px;
+}
+
+.aDWD-1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.aDWD-1 .heading {
+  width: 100%;
+  padding: 2vw;
+  border-bottom: 1px solid #3d3d3d;
+}
+
+.aDWD-1 .heading h1 {
+  font-size: 1.2vmax;
+}
+
+.aDWD-2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2vw;
+  padding: 2vw 2vw 2vw 2vw;
+}
+
+.aDWD-2 .reponame {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.aDWD-2 .reponame a {
+  color: white;
+  text-decoration: none;
+}
+
+.aDWD-2 .reponame h2 {
+  font-size: 1.5vmax;
+  font-weight: 600;
+}
+
+.aDWD-2 .reponame h3 {
+  font-size: 1vmax;
+  font-weight: 100;
+  color: #e6e6e6bc;
+}
+
+.aDWD-2 .repoabout {
+  display: flex;
+}
+
+.aDWD-2 .repoabout a {
+  color: white;
+  text-decoration: none;
+}
+
+.aDWD-2 .repoabout p {
+  font-size: 1vmax;
+  font-weight: 100;
+}
+
+.aDWD-2 .repoinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 7px;
+}
+
+.aDWD-2 .repoinfo .rpcard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.aDWD-2 .repoinfo .rpcard h3 {
+  font-size: 1vmax;
+  font-weight: 100;
+}
+
+.aDWD-2 .repoinfo .rpcard svg {
+  height: 1vmax;
+  width: 1vmax;
+}
+
+@media (max-width: 650px) {
+  .aboutus {
+    padding: 7vw 10vw 23vw 10vw;
+  }
+
+  .aboutDW {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5vw;
+  }
+
+  .aboutDW-up {
+    width: 100%;
+  }
+
+  .aDWU-1 .overview {
+    padding: 3vw;
+  }
+
+  .aDWU-2 {
+    gap: 3vw;
+    padding: 3vw;
+  }
+
+  .aDWU-1 .overview h1 {
+    font-size: 1.2vmax;
+  }
+
+  .aDWU-2 .userinfo img {
+    width: 10vw;
+  }
+
+  .aDWU-2 .userinfo .username h2 {
+    font-size: 1.4vmax;
+  }
+
+  .aDWU-2 .userinfo .username h3 {
+    font-size: 1vmax;
+  }
+
+  .aDWU-2 .userbio h2 {
+    font-size: 1vmax;
+  }
+
+  .aDWU-2 .usersocials {
+    gap: 5px;
+  }
+
+  .aDWU-2 .usersocials a {
+    font-size: 1.1vmax;
+    gap: 8px;
+  }
+
+  .aDWU-2 .usersocials a svg {
+    height: 1vmax;
+    width: 1vmax;
+  }
+
+  .aboutDW-dn {
+    width: 100%;
+  }
+
+  .aDWD-1 .heading {
+    padding: 3vw;
+  }
+
+  .aDWD-1 .heading h1 {
+    font-size: 1.2vmax;
+  }
+
+  .aDWD-2 {
+    gap: 3vw;
+    padding: 3vw;
+  }
+
+  .aDWD-2 .reponame h2 {
+    font-size: 1.4vmax;
+  }
+
+  .aDWD-2 .reponame h3 {
+    font-size: 1vmax;
+  }
+
+  .aDWD-2 .repoabout {
+    width: 70%;
+  }
+
+  .aDWD-2 .repoabout p {
+    font-size: 1vmax;
+  }
+
+  .aDWD-2 .repoinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .aDWD-2 .repoinfo .rpcard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .aDWD-2 .repoinfo .rpcard h3 {
+    font-size: 1.1vmax;
+  }
+
+  .aDWD-2 .repoinfo .rpcard svg {
+    height: 1vmax;
+    width: 1vmax;
+  }
+}
+
+@media (max-width: 500px) {
+  .aboutus {
+    padding: 7vw 10vw 25vw 10vw;
+  }
+
+  .aboutR-up {
+    gap: 1.5vw;
+  }
+
+  .aboutR-up h1 {
+    font-size: 1.5vmax;
+  }
+
+  .aboutR-up p {
+    font-size: 0.8vmax;
+  }
+
+  .aboutR-up button {
+    padding: 0.6vmax;
+    font-size: 0.5vmax;
+  }
+
+  .reviews .reviewCont {
+    padding: 15px 0;
+  }
+}

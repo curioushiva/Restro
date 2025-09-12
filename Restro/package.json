@@ -1,0 +1,31 @@
+{
+  "name": "restro",
+  "version": "1.0.0",
+  "description": "Restro – a React based food delivery app with menus, cart, orders, and account features",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "author": "@curioushiva",
+  "license": "ISC",
+  "dependencies": {
+    "@gsap/react": "^2.1.2",
+    "@mui/material": "^7.3.1",
+    "@reduxjs/toolkit": "^2.8.2",
+    "@remixicon/react": "^4.6.0",
+    "html2canvas": "^1.4.1",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-icons": "^5.5.0",
+    "react-redux": "^9.2.0",
+    "react-router": "^7.8.0",
+    "react-router-dom": "^7.8.0",
+    "remixicon": "^4.6.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.15.4",
+    "process": "^0.11.10",
+    "url": "^0.11.4"
+  }
+}

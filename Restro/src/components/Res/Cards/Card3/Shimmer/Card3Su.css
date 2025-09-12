@@ -1,0 +1,297 @@
+/* Card 3 Component Shimmer UI */
+.Su-card3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3vmax;
+  padding-bottom: 3vmax;
+}
+
+.Ss-card3 .Su-heading {
+  width: 100%;
+  display: flex;
+}
+
+.Su-card3 .Su-heading h1 {
+  height: 1.5vmax;
+  width: 20vmax;
+  background: linear-gradient(
+    -45deg,
+    #e6e6e6bc 40%,
+    #cfcece 50%,
+    #e6e6e6bc 60%
+  );
+  background-size: 300%;
+  background-position-x: 100%;
+  animation: Card3Shimmer 1s infinite linear;
+}
+
+.Su-card3 .Su-actions {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Su-actions .Su-actionBtns {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 2vw;
+}
+
+.Su-actions .Su-actionBtns .Su-filterbox {
+  display: flex;
+  position: relative;
+}
+
+.Su-actions .Su-actionBtns .Su-filterbox .Su-filterbtn {
+  width: 6vmax;
+  height: 2.5vmax;
+  background: linear-gradient(
+    -45deg,
+    #e6e6e6bc 40%,
+    #cfcece 50%,
+    #e6e6e6bc 60%
+  );
+  background-size: 300%;
+  background-position-x: 100%;
+  animation: Card3Shimmer 1s infinite linear;
+  border-radius: 20px;
+}
+
+.Su-actions .Su-actionBtns .Su-sortbox {
+  display: flex;
+  position: relative;
+}
+
+.Su-actions .Su-actionBtns .Su-sortbox .Su-sortbtn {
+  width: 6vmax;
+  height: 2.5vmax;
+  background: linear-gradient(
+    -45deg,
+    #e6e6e6bc 40%,
+    #cfcece 50%,
+    #e6e6e6bc 60%
+  );
+  background-size: 300%;
+  background-position-x: 100%;
+  animation: Card3Shimmer 1s infinite linear;
+  border-radius: 20px;
+}
+
+.Su-actions .Su-searchbox {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1vmax;
+}
+
+.Su-actions .Su-searchbox input {
+  width: 25vmax;
+  height: 2.5vmax;
+  background: linear-gradient(
+    -45deg,
+    #e6e6e6bc 40%,
+    #cfcece 50%,
+    #e6e6e6bc 60%
+  );
+  background-size: 300%;
+  background-position-x: 100%;
+  animation: Card3Shimmer 1s infinite linear;
+  border: 0px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.Su-actions .Su-searchbox button {
+  height: 2.3vmax;
+  width: 2.3vmax;
+  background: linear-gradient(
+    -45deg,
+    #e6e6e6bc 40%,
+    #cfcece 50%,
+    #e6e6e6bc 60%
+  );
+  background-size: 300%;
+  background-position-x: 100%;
+  animation: Card3Shimmer 1s infinite linear;
+  border: none;
+  border-radius: 50%;
+}
+
+@media (max-width: 530px) {
+  .Su-actions .Su-searchbox input {
+    width: 14vmax;
+  }
+}
+
+@media (max-width: 430px) {
+  .Su-actions .Su-searchbox input {
+    width: 13vmax;
+  }
+
+  .Su-actions .Su-actionBtns .Su-filterbox .Su-filterbtn {
+    width: 5vmax;
+  }
+
+  .Su-actions .Su-actionBtns .Su-sortbox .Su-sortbtn {
+    width: 5vmax;
+  }
+}
+
+@media (max-width: 400px) {
+  .Su-actions .Su-searchbox input {
+    width: 11vmax;
+  }
+
+  .Su-actions .Su-actionBtns .Su-filterbox .Su-filterbtn {
+    width: 4.5vmax;
+  }
+
+  .Su-actions .Su-actionBtns .Su-sortbox .Su-sortbtn {
+    width: 4.5vmax;
+  }
+}
+
+@media (max-width: 370px) {
+  .Su-actions .Su-searchbox input {
+    width: 9vmax;
+    height: 2.3vmax;
+  }
+
+  .Su-actions .Su-searchbox button {
+    height: 2.1vmax;
+    width: 2.1vmax;
+  }
+
+  .Su-actions .Su-actionBtns .Su-filterbox .Su-filterbtn {
+    width: 4vmax;
+    height: 2.3vmax;
+  }
+
+  .Su-actions .Su-actionBtns .Su-sortbox .Su-sortbtn {
+    width: 4vmax;
+    height: 2.3vmax;
+  }
+}
+
+.Su-card3 .Su-resWrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 2.5vmax;
+  padding: 2vmax 0;
+}
+
+.Su-card3 .Su-resWrap .Su-resCards {
+  background: white;
+  height: 280px;
+  border-radius: 20px;
+  background: linear-gradient(
+    -45deg,
+    #e6e6e6bc 40%,
+    #cfcece 50%,
+    #e6e6e6bc 60%
+  );
+  background-size: 300%;
+  background-position-x: 100%;
+  animation: Card3Shimmer 1s infinite linear;
+}
+
+.Su-card3 .Su-resWrap a {
+  color: white;
+  text-decoration: none;
+}
+
+.Su-resCards .Su-res-img {
+  height: 50%;
+  width: 100%;
+  position: relative;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: #e6e6e6;
+}
+
+.Su-resCards .Su-res-about {
+  padding: 15px 10px 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.Su-resCards .Su-res-about .Su-res-type {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #616568;
+}
+
+.Su-resCards .Su-res-about .Su-res-type h3 {
+  height: 11px;
+  width: 5vmax;
+  background-color: #e6e6e6;
+}
+
+.Su-resCards .Su-res-about .Su-res-address {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #616568;
+}
+
+.Su-resCards .Su-res-about .Su-res-address h3 {
+  height: 11px;
+  width: 5vmax;
+  background-color: #e6e6e6;
+}
+
+.Su-resCards .Su-res-about .Su-res-serv {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  padding-top: 10px;
+}
+
+.Su-resCards .Su-res-about .Su-res-serv .Su-serv-1 {
+  width: 90px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: #e6e6e6;
+}
+
+.Su-resCards .Su-res-about .Su-res-serv .Su-serv-2 {
+  width: 90px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: #e6e6e6;
+}
+
+.Su-resCards .Su-res-offers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.Su-resCards .Su-res-offers .Su-offer-1 {
+  width: 100%;
+  height: 20px;
+  background-color: #e6e6e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border-radius: 20px;
+}
+
+@keyframes Card3Shimmer {
+  to {
+    background-position-x: 0%;
+  }
+}

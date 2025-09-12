@@ -1,0 +1,184 @@
+/* Cart Items */
+.C-CTG2-Items {
+  width: 100%;
+  display: flex;
+  gap: 2vw;
+  padding: 30px 10px 30px 10px;
+  border-bottom: 0.1px solid #8d8f91;
+}
+
+.C-CTG2I-L {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.C-CTG2I-L img {
+  height: 1vmax;
+  width: 1vmax;
+}
+
+.C-CTG2I-L h1 {
+  font-size: 1.1vmax;
+  color: rgba(255, 255, 255, 0.879);
+}
+
+.C-CTG2I-L h2 {
+  font-size: 1vmax;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.C-CTG2I-R {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.C-CTG2IR-Cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.C-CTG2IR-Cont img {
+  height: 10.5vmax;
+  width: 11.2vmax;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+}
+
+.C-CTG2IR-Cont-noImg {
+  height: 5.25vmax;
+  width: 11.2vmax;
+  background-color: transparent;
+  border-radius: 20px;
+}
+
+.C-CTG2IR-Cont .addCustom {
+  position: relative;
+  top: -1vmax;
+  height: 2.5vmax;
+  width: 6vmax;
+  background-color: #cd565a;
+  border-radius: 15px;
+  cursor: pointer;
+  padding: 0.5vmax;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.6vmax;
+}
+
+.C-CTG2IR-Cont .addCustom h1 {
+  font-size: 1vmax;
+}
+
+.C-CTG2IR-Cont .addCustom button {
+  width: 40%;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1.5vmax;
+  font-weight: 1000;
+  cursor: pointer;
+  outline: none;
+}
+
+@media (max-width: 700px) {
+  .C-CTG2IR-Cont img {
+    height: 9.5vmax;
+    width: 10.2vmax;
+  }
+
+  .C-CTG2IR-Cont-noImg {
+    height: 4.75vmax;
+    width: 10.2vmax;
+  }
+}
+
+@media (max-width: 560px) {
+  .C-CTG2I-L h1 {
+    font-size: 1vmax;
+  }
+
+  .C-CTG2I-L h2 {
+    font-size: 0.9vmax;
+  }
+}
+
+@media (max-width: 490px) {
+  .C-CTG2I-L img {
+    height: 0.9vmax;
+    width: 0.9vmax;
+  }
+
+  .C-CTG2I-L h1 {
+    font-size: 0.8vmax;
+  }
+
+  .C-CTG2I-L h2 {
+    font-size: 0.7vmax;
+  }
+
+  .C-CTG2IR-Cont img {
+    height: 7.5vmax;
+    width: 8.2vmax;
+  }
+
+  .C-CTG2IR-Cont-noImg {
+    height: 3.75vmax;
+    width: 8.2vmax;
+  }
+
+  .C-CTG2IR-Cont .addCustom {
+    height: 2.2vmax;
+    width: 5.3vmax;
+  }
+
+  .C-CTG2IR-Cont .addCustom h1 {
+    font-size: 0.9vmax;
+  }
+}
+
+@media (max-width: 400px) {
+  .C-CTG2I-L h1 {
+    font-size: 0.8vmax;
+  }
+
+  .C-CTG2I-L h2 {
+    font-size: 0.7vmax;
+  }
+
+  .C-CTG2IR-Cont img {
+    height: 6vmax;
+    width: 6.7vmax;
+    border-radius: 18;
+  }
+
+  .C-CTG2IR-Cont-noImg {
+    height: 3vmax;
+    width: 6.7vmax;
+  }
+
+  .C-CTG2IR-Cont .addCustom {
+    height: 2.1vmax;
+    width: 5vmax;
+    gap: 0.5vmax;
+  }
+
+  .C-CTG2IR-Cont .addCustom h1 {
+    font-size: 0.8vmax;
+  }
+
+  .C-CTG2IR-Cont .addCustom button {
+    font-size: 1.3vmax;
+  }
+}

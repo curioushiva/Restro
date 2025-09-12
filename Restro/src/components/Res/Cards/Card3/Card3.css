@@ -1,0 +1,578 @@
+/* Card 3 Component */
+.card3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3vmax;
+  padding-bottom: 3vmax;
+}
+
+.isCard4Data {
+  border-bottom: 0.5px solid #8d8f91;
+}
+
+.card3 .heading {
+  width: 100%;
+  display: flex;
+}
+
+.card3 .heading h1 {
+  font-size: 1.5vmax;
+}
+
+.card3 .actions {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.actions .actionBtns {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 2vw;
+}
+
+.actions .actionBtns .filterbox {
+  display: flex;
+  position: relative;
+}
+
+.actions .actionBtns .filterbox .filterbtn {
+  width: 6vmax;
+  height: 2.5vmax;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  color: black;
+  background-color: #f0f0f5;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.actions .actionBtns .filterbox .filterbtn h1 {
+  font-size: 0.9vmax;
+  font-weight: 400;
+}
+
+.actions .actionBtns .filterbox .filterbtn svg {
+  height: 0.8vmax;
+  width: 0.8vmax;
+}
+
+.actions .actionBtns .filterbox .filterValues {
+  width: 14vmax;
+  height: 12vmax;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1vmax;
+  color: black;
+  background-color: #f0f0f5;
+  border-radius: 20px;
+  cursor: pointer;
+  padding-top: 0.5vmax;
+  padding-left: 1.5vmax;
+  position: absolute;
+  z-index: 5;
+  top: 3.5vmax;
+}
+
+.actions .actionBtns .filterbox .filterValues::before {
+  content: "";
+  position: absolute;
+  top: -0.7vmax;
+  left: 2vmax;
+  border-width: 0 8px 10px 8px;
+  border-style: solid;
+  border-color: transparent transparent #f0f0f5 transparent;
+}
+
+.actions .actionBtns .filterbox .filterValues h1 span {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5vmax;
+}
+
+.actions .actionBtns .filterbox .filterValues h1 span svg {
+  width: 1vmax;
+  height: 1vmax;
+}
+
+.actions .actionBtns .filterbox .filterValues .f-values {
+  width: 100%;
+  border-bottom: 1px solid #616568;
+  padding-bottom: 0.5vmax;
+}
+
+.actions .actionBtns .filterbox .filterValues .f-values:nth-child(4) {
+  border-bottom: 0px;
+}
+
+.actions .actionBtns .filterbox .filterValues h1 {
+  font-size: 0.8vmax;
+  font-weight: 400;
+}
+
+.actions .actionBtns .sortbox {
+  display: flex;
+  position: relative;
+}
+
+.actions .actionBtns .sortbox .sortbtn {
+  width: 6vmax;
+  height: 2.5vmax;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  color: black;
+  background-color: #f0f0f5;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.actions .actionBtns .sortbox .sortbtn h1 {
+  font-size: 0.9vmax;
+  font-weight: 400;
+}
+
+.actions .actionBtns .sortbox .sortbtn svg {
+  height: 1.5vmax;
+  width: 1.5vmax;
+}
+
+.actions .actionBtns .sortbox .sortvalues {
+  width: 14vmax;
+  height: 7vmax;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1vmax;
+  color: black;
+  background-color: #f0f0f5;
+  border-radius: 20px;
+  cursor: pointer;
+  padding-top: 0.5vmax;
+  padding-left: 1.5vmax;
+  position: absolute;
+  z-index: 5;
+  top: 3.5vmax;
+}
+
+.actions .actionBtns .sortbox .sortvalues::before {
+  content: "";
+  position: absolute;
+  top: -0.7vmax;
+  left: 2vmax;
+  border-width: 0 8px 10px 8px;
+  border-style: solid;
+  border-color: transparent transparent #f0f0f5 transparent;
+}
+
+.actions .actionBtns .sortbox .sortvalues h1 span {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5vmax;
+}
+
+.actions .actionBtns .sortbox .sortvalues h1 span svg {
+  width: 1vmax;
+  height: 1vmax;
+}
+
+.actions .actionBtns .sortbox .sortvalues .s-values {
+  width: 100%;
+  border-bottom: 1px solid #616568;
+  padding-bottom: 0.5vmax;
+}
+
+.actions .actionBtns .sortbox .sortvalues .s-values:nth-child(4) {
+  border-bottom: 0px;
+}
+
+.actions .actionBtns .sortbox .sortvalues h1 {
+  font-size: 0.8vmax;
+  font-weight: 400;
+}
+
+.actions .searchbox {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1vmax;
+}
+
+.actions .searchbox input {
+  width: 25vmax;
+  text-align: center;
+  border: 0px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.actions .searchbox input:focus {
+  outline: none;
+}
+
+.actions .searchbox input[type="text"] {
+  font-size: 1vmax;
+}
+
+.actions .searchbox input::placeholder {
+  height: 100%;
+  width: 100%;
+  font-size: 0.9vmax;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.76);
+}
+
+.actions .searchbox button {
+  padding: 0.9vmax;
+  background-color: #cd565a;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.actions .searchbox button .search-icon {
+  height: 0.8vmax;
+  width: 0.8vmax;
+  color: white;
+}
+
+@media (max-width: 530px) {
+  .actions .searchbox input {
+    width: 14vmax;
+  }
+
+  .actions .searchbox input::placeholder {
+    font-size: 0.8vmax;
+    position: absolute;
+    top: 7px;
+  }
+}
+
+@media (max-width: 430px) {
+  .actions .searchbox input {
+    width: 13vmax;
+  }
+
+  .actions .searchbox input::placeholder {
+    font-size: 0.8vmax;
+    position: absolute;
+    top: 7px;
+  }
+
+  .actions .actionBtns .filterbox .filterbtn {
+    width: 5vmax;
+    gap: 2px;
+  }
+
+  .actions .actionBtns .filterbox .filterbtn h1 {
+    font-size: 0.8vmax;
+  }
+
+  .actions .actionBtns .sortbox .sortbtn {
+    width: 5vmax;
+    gap: 2px;
+  }
+
+  .actions .actionBtns .sortbox .sortbtn h1 {
+    font-size: 0.8vmax;
+  }
+
+  .actions .actionBtns .sortbox .sortbtn svg {
+    height: 1.2vmax;
+    width: 1.2vmax;
+  }
+}
+
+@media (max-width: 400px) {
+  .actions .searchbox input {
+    width: 11vmax;
+  }
+
+  .actions .searchbox input::placeholder {
+    font-size: 0.75vmax;
+    position: absolute;
+    top: 7px;
+  }
+
+  .actions .actionBtns .filterbox .filterbtn {
+    width: 4.5vmax;
+    gap: 1px;
+  }
+
+  .actions .actionBtns .filterbox .filterbtn h1 {
+    font-size: 0.75vmax;
+  }
+
+  .actions .actionBtns .sortbox .sortbtn {
+    width: 4.5vmax;
+    gap: 0px;
+  }
+
+  .actions .actionBtns .sortbox .sortbtn h1 {
+    font-size: 0.75vmax;
+  }
+
+  .actions .actionBtns .sortbox .sortbtn svg {
+    height: 1.1vmax;
+    width: 1.1vmax;
+  }
+}
+
+@media (max-width: 370px) {
+  .actions .searchbox input {
+    width: 9vmax;
+    height: 2.3vmax;
+  }
+
+  .actions .searchbox input::placeholder {
+    font-size: 0.7vmax;
+    position: absolute;
+    top: 7px;
+  }
+
+  .actions .searchbox button {
+    padding: 0.75vmax;
+  }
+
+  .actions .searchbox button .search-icon {
+    height: 0.75vmax;
+    width: 0.75vmax;
+  }
+
+  .actions .actionBtns .filterbox .filterbtn {
+    width: 4vmax;
+    height: 2.3vmax;
+    gap: 1px;
+  }
+
+  .actions .actionBtns .filterbox .filterbtn h1 {
+    font-size: 0.7vmax;
+  }
+
+  .actions .actionBtns .sortbox .sortbtn {
+    width: 4vmax;
+    height: 2.3vmax;
+    gap: 0px;
+  }
+
+  .actions .actionBtns .sortbox .sortbtn h1 {
+    font-size: 0.7vmax;
+  }
+
+  .actions .actionBtns .sortbox .sortbtn svg {
+    height: 1.1vmax;
+    width: 1.1vmax;
+  }
+}
+
+.card3 .resWrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 2.5vmax;
+  padding: 2vmax 0;
+}
+
+.card3 .resWrap .resCards {
+  background: white;
+  height: 280px;
+  border-radius: 20px;
+  transition: all 0.5s ease;
+}
+
+.card3 .resWrap a {
+  color: white;
+  text-decoration: none;
+}
+
+.card3 .resWrap .resCards:hover {
+  cursor: pointer;
+  transform: scale(0.97);
+}
+
+.resCards .res-img {
+  height: 50%;
+  width: 100%;
+  position: relative;
+}
+
+.resCards .res-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  opacity: 100%;
+}
+
+.resCards .res-img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.35), transparent);
+  z-index: 1;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.resCards .res-img .res-name {
+  width: 100%;
+  padding: 0 10px 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 5px;
+  z-index: 2;
+}
+
+.resCards .res-img .res-name h1 {
+  font-size: 22px;
+}
+
+.resCards .res-img .res-name .res-ratings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.resCards .res-img .res-name .star-icon {
+  height: 15px;
+  width: 15px;
+  padding: 2px;
+  background-color: #cd565a;
+  border-radius: 50%;
+}
+
+.resCards .res-img .res-name .res-ratings h2 {
+  font-size: 15px;
+  line-height: 1;
+}
+
+.resCards .res-about {
+  padding: 15px 10px 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.resCards .res-about .res-type {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #616568;
+}
+
+.resCards .res-about .res-type h3 {
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.resCards .res-about .res-address {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #616568;
+}
+
+.resCards .res-about .res-address h3 {
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.resCards .res-about .res-serv {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  padding-top: 10px;
+}
+
+.resCards .res-about .res-serv .serv-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  width: 100px;
+  border-radius: 20px;
+  background-color: #f0f0f5;
+  color: #616568;
+}
+
+.resCards .res-about .res-serv .serv-1 .cal-icon {
+  width: 10px;
+}
+
+.resCards .res-about .res-serv .serv-1 h2 {
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.resCards .res-about .res-serv .serv-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  width: 100px;
+  border-radius: 20px;
+  background-color: #f0f0f5;
+  color: #616568;
+}
+
+.resCards .res-about .res-serv .serv-2 .cake-icon {
+  width: 10px;
+}
+
+.resCards .res-about .res-serv .serv-2 h2 {
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.resCards .res-offers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.resCards .res-offers .offer-1 {
+  width: 100%;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background-color: #cd565a;
+  border-radius: 20px;
+}
+
+.resCards .res-offers .offer-1 .disc-icon {
+  width: 15px;
+}
+
+.resCards .res-offers .offer-1 h2 {
+  font-size: 13px;
+}

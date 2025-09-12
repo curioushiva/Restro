@@ -1,0 +1,65 @@
+/* Card 4 Component Shimmer UI */
+.Su-card4 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3vmax;
+  padding-bottom: 7vmax;
+}
+
+.Su-card4 .Su-heading {
+  width: 100%;
+  display: flex;
+}
+
+.Su-card4 .Su-heading h1 {
+  height: 1.5vmax;
+  width: 20vmax;
+  background: linear-gradient(
+    -45deg,
+    #e6e6e6bc 40%,
+    #cfcece 50%,
+    #e6e6e6bc 60%
+  );
+  background-size: 300%;
+  background-position-x: 100%;
+  animation: Card4Shimmer 1s infinite linear;
+}
+
+.Su-card4 .Su-exploreres {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(10vmax, 1fr));
+  gap: 2.3vmax;
+}
+
+.Su-card4 .Su-exploreres .Su-explore1 {
+  height: 50px;
+  background: linear-gradient(
+    -45deg,
+    #e6e6e6bc 40%,
+    #cfcece 50%,
+    #e6e6e6bc 60%
+  );
+  background-size: 300%;
+  background-position-x: 100%;
+  animation: Card4Shimmer 1s infinite linear;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5vmax;
+  border: 0.5px solid #8d8f91;
+  border-radius: 20px;
+}
+
+@media (max-width: 720px) {
+  .Su-card4 .Su-exploreres {
+    grid-template-columns: repeat(2, minmax(10vmax, 1fr));
+  }
+}
+
+@keyframes Card4Shimmer {
+  to {
+    background-position-x: 0%;
+  }
+}
